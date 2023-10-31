@@ -2,7 +2,7 @@ const login = require("./login.route");
 
 function route(app) {
     app.get("/", (req, res, next) => {
-        res.render("index");
+        res.render("pages/index");
     });
 
     app.use("/login", login);
